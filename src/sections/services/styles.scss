@@ -1,0 +1,124 @@
+@import url(../../../static/webfont/stylesheet.css);
+
+.services {
+     background-color: #000;
+     .row.top {
+         display: flex;
+         min-height: 80%;
+         display: block;
+         overflow: hidden;
+         @media (max-width: 991px) {
+              min-height: 100%;
+              padding-top: 50px;
+         }
+         .content {
+             display: flex;
+             justify-content: center;
+             flex-direction: column;
+             padding: 2% 5%;
+             .baffle_text span {
+               color: #fff;
+               font-family: 'Circular Std Black';
+               font-size: 60px;
+               line-height: 60px;
+               font-weight: 800;
+               @media (max-width: 991px) {
+                    font-size: 40px;
+                    line-height: 40px;
+               }
+             }
+             .services_container {
+               display: flex;
+               align-items: center;
+               
+               @media (max-width: 991px) {
+                    margin-top: 40px;
+               }
+               .container {
+                    max-width: 1400px;
+                    overflow: hidden;
+                    .row {
+                         overflow: hidden;
+                    }
+                    .service {
+                         text-align: center;
+                         margin: 20px 0px;
+                         padding: 0 40px;
+                         @media (max-width: 991px) {
+                              padding: 0;
+                              margin-bottom: 50px;
+                         }
+                         @media (max-width: 1300px) {
+                              padding: 0 10px;
+                         }
+                         .icon svg {
+                              font-size: 50px;
+                              color: #FDE745;
+                              &.solid {
+                                   font-size: 40px !important;
+                              }
+                         }
+                         h4 {
+                              color: #fff;
+                              font-family: 'Circular Std Black';
+                              margin: 15px 0px 9px 0px;
+                              font-size: 20px;
+                         }
+                         p {
+                              font-family: 'Circular Std Book';
+                              color: #eee;
+                              font-size: 14px;
+                              font-weight: 300;
+                         }
+                         &.border-side {
+                              border-left: 1px solid #FDE745;
+                              border-right: 1px solid #FDE745;
+                              @media (max-width: 991px) {
+                                   border: none;
+                              }
+                         }
+                    }
+               }
+          }
+         }
+     }
+     .row.bottom {
+          min-height: 20%;
+          background-color: #FDE745;
+          display: flex;
+          .container {
+               display: flex;
+               align-items: center;
+               @media (max-width:991px) {
+                    display: block;
+               }
+               .counter_component {
+                    text-align: center;
+                    @media (max-width:991px) {
+                         padding: 20px;
+                    }
+                    .icon {
+                         color: #000;
+                         font-size: 28px;
+                         height: 36px;
+                    }
+                    .value {
+                         span {
+                              color: #000;
+                              font-size: 30px;
+                        }
+                        .symbol {
+                              position: absolute;
+                              font-size: 17px;
+                              color: #000;
+                        }
+                    }
+                    .text {
+                         color: #000;
+                         font-size: 14px;
+                         line-height: 15px;
+                    }
+               }
+          }
+     }
+}
