@@ -7,6 +7,7 @@ import Hero from 'sections/hero'
 import About from 'sections/about'
 import Portfolio from 'sections/portfolio'
 import Services from 'sections/services'
+import SecondServices from 'sections/secondservices'
 import Testimonials from 'sections/testimonials'
 import Contact from 'sections/contact'
 
@@ -23,7 +24,10 @@ class HomePage extends React.Component {
         <Layout>
             <Hero id="home" />
             <About id="about" />
-            <Services id="services" />
+            <div className='backgroundServices'>
+              <Services id="services" />
+              <SecondServices id="secondservices" />
+            </div>
             <Portfolio id="portfolio" />
             <Testimonials id="testimonials" />
             <Contact id="contact" />

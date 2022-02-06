@@ -3,7 +3,7 @@
     width: 25%;
     height: 100%;
     z-index: -1000;
-    background-color: #509BF5;
+    background-color: #A37756;
     height: 100%;
     z-index: 1000;
     transform: translateX(-100%);
@@ -20,7 +20,7 @@
         visibility: visible;
     }
     .closeNav {
-        color: #CCDE6A;
+        color: #fff;
         position: absolute;
         right: 20px;
         top: 20px;
@@ -28,7 +28,7 @@
         cursor: pointer;
         transition: .1s;
         &:hover {
-            color: #000;
+            color: #11123F;
         }
     }
     .logo {
@@ -46,7 +46,7 @@
             padding-bottom: 5px;
             position: relative;
             button {
-                color: #000;
+                color: #fff;
                 background-color: transparent;
                 border: none;
                 &:focus {
@@ -61,7 +61,7 @@
                 left: 0;
                 bottom: 0;
                 visibility: hidden;
-                background-color: #CCDE6A;
+                background-color: #fff;
                 -webkit-transition: all .1s ease;
                 transition: all 0.3s ease;  
                 -webkit-transform: scaleX(0);
@@ -87,11 +87,11 @@
     z-index: 50;
     svg {
         color: #fff;
-        font-size: 40px;
+        font-size: 50px;
         cursor: pointer;
         transition: .1s;
         &:hover {
-            color: #CCDE6A;
+            color: #11123F;
         }
     }
 }

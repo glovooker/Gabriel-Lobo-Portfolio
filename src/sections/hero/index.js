@@ -17,7 +17,7 @@ class Hero extends React.Component {
         style={{ height: this.context.height }}
       >
         <Row>
-          <Col md={6} className="content">
+          <Col md={12} className="content">
             <div className="content-text">
               <div className="line-text">
                 <h4>Hello, I'm</h4>
@@ -26,53 +26,31 @@ class Hero extends React.Component {
               <Typewriter
                 options={{
                   strings: [
-                    'React Developer',
-                    'UI Designer',
+                    'Junior React Developer',
+                    'UI/UX Designer',
                     'Web Dev Lover',
                     'Scrum Product Owner',
-                    'Software Engineer Apprentice',
-                    'Anime fanboy'
+                    'UCenfotec Student',
+                    'Anime Fanboy'
                   ],
                   autoStart: true,
                   loop: true,
                 }}
               />
               <button className="hover-button">
-                  <span>Download CV</span>
+                  <span>Download Resume</span>
               </button>
             </div>
-            {this.icons()}
           </Col>
-          <Col md={6} className="img">
+          <Col md={12} className="img">
             <img
               src={this.props.mainImg.childImageSharp.fluid.src}
-              alt="Gabriel Lobo Neon"
+              alt="Gabriel Lobo' Logo"
             />
           </Col>
         </Row>
       </section>
     )
-  }
-
-  icons() {
-    return this.props.icons.edges.map((value, index) => {
-      return (
-        <img
-          src={value.node.childImageSharp.fluid.src}
-          className={`animated fadeIn move-${
-            Math.floor(Math.random() * 10) % 2 === 0 ? 'up' : 'down'
-          } float-image`}
-          style={{
-            left: `${index * 10}%`,
-            bottom: `${Math.random() *
-              (+(index % 2 === 0 ? 80 : 20) - +(index % 2 === 0 ? 70 : 10)) +
-              +(index % 2 === 0 ? 70 : 10)}%`,
-          }}
-          alt="shape"
-          key={index}
-        />
-      )
-    })
   }
 }
 
@@ -80,23 +58,7 @@ export default props => (
   <StaticQuery
     query={graphql`
       query {
-        icons: allFile(
-          filter: {
-            extension: { regex: "/(png)/" }
-            relativeDirectory: { eq: "icons" }
-          }
-        ) {
-          edges {
-            node {
-              childImageSharp {
-                fluid(maxWidth: 100) {
-                  src
-                }
-              }
-            }
-          }
-        }
-        Img: file(relativePath: { eq: "personPrincipal.jpg" }) {
+        Img: file(relativePath: { eq: "logo.png" }) {
           childImageSharp {
             fluid(maxWidth: 2000) {
               src

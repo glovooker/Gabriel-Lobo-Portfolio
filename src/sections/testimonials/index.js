@@ -69,6 +69,14 @@ class Testimonials extends React.Component {
                   {this.quote()}
                   {this.testimonial_slider()}
                 </Container>
+                <Container>
+                  {this.quote()}
+                  {this.testimonial_slider()}
+                </Container>
+                <Container>
+                  {this.quote()}
+                  {this.testimonial_slider()}
+                </Container>
               </div>
             </Col>
           </div>
@@ -118,13 +126,7 @@ class Testimonials extends React.Component {
       return this.props.testimonials.edges.map((value, index) => {
         return (
           <div className="testimonial" key={index}>
-            <h2>{value.content.frontmatter.heading}</h2>
-            <div
-              className="testimonial_content"
-              dangerouslySetInnerHTML={{
-                __html: value.content.html,
-              }}
-            />
+            <h2>Hello World</h2>
             <div className="client_container">
               <div className="client">
                 <img
@@ -133,12 +135,6 @@ class Testimonials extends React.Component {
                   }
                   alt={value.content.frontmatter.name}
                 />
-                <div className="info">
-                  <p className="name">{value.content.frontmatter.name}</p>
-                  <p className="profession">
-                    {value.content.frontmatter.profession}
-                  </p>
-                </div>
               </div>
             </div>
           </div>

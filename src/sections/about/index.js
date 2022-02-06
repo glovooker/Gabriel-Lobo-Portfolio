@@ -19,25 +19,21 @@ class Hero extends React.Component {
                     <Col md={6} className="content">
                         <div className="content-text">
                             <div className="line-text">
-                                <h4>About Me</h4>
+                                <h4>A B O U T &nbsp; M E</h4>
                             </div>
                             <h3>I'm a React Developer with a Graphic Designer Complex</h3>
                             <div className="separator" />
                             <p>Just kidding! As a matter of fact, I love both logical and creative worlds that merge together through tech. 
                               Every good idea has a back-end and a front-end waiting to be developed, and both of them are as breathtaking as the other to me.
                             </p>
-                            <p>Having worked as a Software Engineer Intern at 3Pillar Global using React, C#, ASP.NET MVC, with the help of Agile's Scrum Methodology on the way (yes, I'm also a certified Scrum Product Owner), 
-                              I'm currently learning and building my knowledge alongside great people through the Software Engineering Bachelor's Degree at Cenfotec.
-                            </p>
                             <p>As a fan of technology and knowledge, if you have an idea that could use my abilities to come to reality through any of the above-mentioned stuff, 
                               feel free to check out my CV or the projects I've left for you below, and reach out to me as soon as you feel like it!
                             </p>
                             <br/>
                             <div className="social social_icons">
+                                <FontAwesomeIcon icon={faLinkedin} className="social_icon" onClick={() => window.open('https://www.linkedin.com/in/gabriel-lobo-4a63b4196/')} />
                                 <FontAwesomeIcon icon={faGithub} className="social_icon" onClick={() => window.open('https://www.github.com/kuronoknshi')}/>
                                 <FontAwesomeIcon icon={faFigma} className="social_icon" onClick={() => window.open('https://www.figma.com/@blacksw0rdman')} />
-                                <FontAwesomeIcon icon={faYoutube} className="social_icon" onClick={() => window.open('https://www.youtube.com')} />
-                                <FontAwesomeIcon icon={faLinkedin} className="social_icon" onClick={() => window.open('https://www.linkedin.com/in/gabriel-alejandro-lobo-ulloa-4a63b4196/')} />
                             </div>
                         </div>
                     </Col>
@@ -45,6 +41,7 @@ class Hero extends React.Component {
                         <img
                         src={this.props.mainImg.childImageSharp.fluid.src}
                         alt="Gabriel Lobo"
+                        className="portraitImage"
                         />
                     </Col>
                 </Row>
@@ -84,22 +81,6 @@ export default props => (
 <StaticQuery
     query={graphql`
       query {
-        icons: allFile(
-          filter: {
-            extension: { regex: "/(png)/" }
-            relativeDirectory: { eq: "icons" }
-          }
-        ) {
-          edges {
-            node {
-              childImageSharp {
-                fluid(maxWidth: 100) {
-                  src
-                }
-              }
-            }
-          }
-        }
         Img: file(relativePath: { eq: "person2.jpg" }) {
           childImageSharp {
             fluid(maxHeight: 961) {

@@ -1,6 +1,7 @@
 @import url(../../../static/webfont/stylesheet.css);
 
 .hero {
+    background-image: url(../../../content/images/person.jpg);
     background-color: #000;
     height: 500px;
     padding: 50px;
@@ -21,20 +22,27 @@
         }
         .img {
             display: flex;
-            align-items: flex-end;
-            justify-content: flex-end;
+            justify-self: flex-end;
+            align-items: center;
             padding: 0;
             overflow: hidden;
+            width: 1000px;
+            
             img {
-                margin-bottom: 0;
+                width: 1000px;
+                
+                @media (max-width: 991px) {
+                    width: 500px;
+                }
             }
+
         }
         .content {
             display: flex;
             justify-content: center;
             flex-direction: column;
             padding: 5%;
-            background-color: #000;
+            background-color: transparent;
             @media (max-width:991px) {
                 width: 100%;
             }
@@ -45,9 +53,10 @@
                 color: #fff;
                 font-size: 50px;
                 font-family: 'Circular Std';
-                font-weight: 700;
+                font-feature-settings: 'ss01', 'ss02';
+                font-weight: 400;
                 &.Typewriter__cursor {
-                    color: #FDE745;
+                    color: #fff;
                 }
             }
             @media (max-width:991px) {
@@ -76,7 +85,7 @@
                 }
             }
             .hover-button {
-                margin-top: 20px;
+                margin-top: 40px;
             }
             @media (max-width:991px) {
                 margin: auto;

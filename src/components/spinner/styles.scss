@@ -8,7 +8,7 @@
     display: flex !important;
     align-items: center;
     justify-content: center;
-    background-color: #509BF5;
+    background-image: url(../../../content/images/person.jpg);
     opacity: 0;
     visibility: visible;
     transition: .5s;
@@ -34,12 +34,12 @@
             animation: 2s fancy infinite alternate;
             
             &:nth-child(1) {
-            border-left-color: #FDE745;
-            border-right-color: #FDE745;
+            border-left-color: #fff;
+            border-right-color: #fff;
             }
             &:nth-child(2) {
-            border-top-color: #FDE745;
-            border-bottom-color: #FDE745;
+            border-top-color: #fff;
+            border-bottom-color: #fff;
             animation-delay: 1s;
             }
         }
@@ -47,7 +47,7 @@
         &.dot {
                 width: 1rem;
                 height: 1rem;
-                background: #FDE745;
+                background: #fff;
             }
         }
     }
