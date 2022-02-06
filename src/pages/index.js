@@ -8,7 +8,6 @@ import About from 'sections/about'
 import Portfolio from 'sections/portfolio'
 import Services from 'sections/services'
 import SecondServices from 'sections/secondservices'
-import Testimonials from 'sections/testimonials'
 import Contact from 'sections/contact'
 
 class HomePage extends React.Component {
@@ -29,7 +28,6 @@ class HomePage extends React.Component {
               <SecondServices id="secondservices" />
             </div>
             <Portfolio id="portfolio" />
-            <Testimonials id="testimonials" />
             <Contact id="contact" />
         </Layout>
         <Spinner duration={2000} />

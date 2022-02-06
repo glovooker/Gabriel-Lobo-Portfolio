@@ -2,9 +2,21 @@ import React from 'react'
 import { Row, Col, Container } from 'react-bootstrap'
 import BaffleText from 'components/baffle-text'
 import AnimationContainer from 'components/animation-container'
-import netIcon from '../../../content/images/icons/net.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faReact, faAngular, faAws, faJsSquare } from '@fortawesome/free-brands-svg-icons'
+import SD from '../../../content/images/clients/client-1.png'
+import GD from '../../../content/images/clients/client-2.png'
+import CB from '../../../content/images/clients/client-3.png'
+import WR from '../../../content/images/clients/client-4.png'
+import UI from '../../../content/images/clients/client-5.png'
+import AV from '../../../content/images/clients/client-6.png'
+import netIcon from '../../../content/images/icons/net.svg'
+import cSharpIcon from '../../../content/images/icons/c#.svg'
+import jestIcon from '../../../content/images/icons/jest.svg'
+import materialUiIcon from '../../../content/images/icons/materialui.svg'
+import solanaIcon from '../../../content/images/icons/solana.svg'
+import illustratorIcon from '../../../content/images/icons/illustrator.svg'
+
+import { faReact, faNodeJs, faJsSquare, faFigma, faGitAlt, faGithub, faBootstrap, faBitcoin, faEthereum } from '@fortawesome/free-brands-svg-icons'
 import {
   faPencilRuler,
   faServer,
@@ -51,12 +63,9 @@ class SecondServices extends React.Component {
         >
           <div className="content">
             <Col md={12}>
-              <div className="line-text">
-                <h4>DEV/DES</h4>
-              </div>
               <div className="heading">
                 <BaffleText
-                  text="Some of My Knowledge"
+                  text=""
                   revealDuration={500}
                   revealDelay={500}
                   parentMethod={this.show}
@@ -77,7 +86,7 @@ class SecondServices extends React.Component {
             </Col>
           </div>
         </Row>
-        <Row className="bottom">{this.counters()}</Row>
+        <Row className="bottom">{this.clients()}</Row>
       </section>
     )
   }
@@ -85,150 +94,166 @@ class SecondServices extends React.Component {
   services() {
     if (this.state.show || this.context.height === 'auto') {
       return (
+        <>
         <Row>
+          <div className="line-text">
+            <h4>U I</h4>
+          </div>
           <Col md={4} className="service">
             <AnimationContainer delay={200} animation="fadeInLeft fast">
-              <div className="icon" id="icon-js">
-                <FontAwesomeIcon icon={faJsSquare} />
+              <div className="icon">
+                <FontAwesomeIcon icon={faBootstrap} />
               </div>
-              <h4>JavaScript</h4>
-              <p>
-                I started studying JavaScript about five years ago, and since then 
-                I've improved my knowledge to create landing pages, WebApps, authentication
-                systems, and many more!
-              </p>
+              <h4>Bootstrap</h4>
+
             </AnimationContainer>
           </Col>
           <Col md={4} className="service border-side">
-            <AnimationContainer delay={400} animation="fadeInDown fast">
+            <AnimationContainer delay={400} animation="fadeIn fast">
+              <div className="icon">
+                <FontAwesomeIcon icon={faFigma} />
+              </div>
+              <h4>Figma</h4>
+            </AnimationContainer>
+          </Col>
+          <Col md={4} className="service">
+            <AnimationContainer delay={600} animation="fadeInRight fast">
+              <div className="icon" >
+                <img src={materialUiIcon} width="50px"/> 
+              </div>
+              <h4>Material UI</h4>
+            </AnimationContainer>
+          </Col>
+          </Row>
+          <Row>
+          <div className="line-text">
+            <h4>C R Y P T O &nbsp; & &nbsp; B L O C K C H A I N</h4>
+          </div>
+          <Col md={4} className="service">
+            <AnimationContainer delay={800} animation="fadeInLeft fast">
+              <div className="icon">
+                <FontAwesomeIcon icon={faBitcoin} className="solid" />
+              </div>
+              <h4>Bitcoin</h4>
+            </AnimationContainer>
+          </Col>
+          <Col md={4} className="service border-side">
+            <AnimationContainer delay={1000} animation="fadeIn fast">
+              <div className="icon">
+                <FontAwesomeIcon icon={faEthereum} className="solid" />
+              </div>
+              <h4>Ethereum</h4>
+            </AnimationContainer>
+          </Col>
+          <Col md={4} className="service">
+            <AnimationContainer delay={1200} animation="fadeInRight fast">
+              <div className="icon" >
+                <img src={solanaIcon} width="50px"/> 
+              </div>
+              <h4>Solana</h4>
+            </AnimationContainer>
+          </Col>
+          </Row>
+        <Row>
+          <div className="line-text">
+                <h4>V I S U A L &nbsp; D E S I G N</h4>
+              </div>
+          <Col md={4} className="service">
+            <AnimationContainer delay={200} animation="fadeInLeft fast">
+              <div className="icon" >
+                <img src={illustratorIcon} width="50px"/> 
+              </div>
+              <h4>Adobe Illustrator</h4>
+
+            </AnimationContainer>
+          </Col>
+          <Col md={4} className="service border-side">
+            <AnimationContainer delay={400} animation="fadeIn fast">
               <div className="icon" >
                 <img src={netIcon} width="50px"/> 
               </div>
-              <h4> Microsoft .NET Core</h4>
-              <p>
-                Having worked with ASP.NET Core to create a whole back-end environment
-                using Razor and Entity Framework, this technology has helped me along my way
-                to develop well-structured server-side projects.
-              </p>
+              <h4>Adobe Photoshop</h4>
             </AnimationContainer>
           </Col>
           <Col md={4} className="service">
             <AnimationContainer delay={600} animation="fadeInRight fast">
               <div className="icon">
-                <FontAwesomeIcon icon={faAws} />
+                <FontAwesomeIcon icon={faNodeJs} />
               </div>
-              <h4>AWS Management</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-                dui sem, vulputate vitae dolor sed, sollicitudin pharetra nisi.
-                In et sem libero. Integer pretium, tellus eu pellentesque
-                tristique, ex libero maximus elit, mollis tristique urna eros
-                non tellus
-              </p>
+              <h4>Adobe After Effects</h4>
             </AnimationContainer>
           </Col>
+          </Row>
+          <Row>
           <Col md={4} className="service">
             <AnimationContainer delay={800} animation="fadeInLeft fast">
               <div className="icon">
-                <FontAwesomeIcon icon={faPencilRuler} className="solid" />
+                <FontAwesomeIcon icon={faReact} className="solid" />
               </div>
-              <h4>UI/UX Design</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-                dui sem, vulputate vitae dolor sed, sollicitudin pharetra nisi.
-                In et sem libero. Integer pretium, tellus eu pellentesque
-                tristique, ex libero maximus elit, mollis tristique urna eros
-                non tellus
-              </p>
+              <h4>Adobe Premiere</h4>
             </AnimationContainer>
           </Col>
           <Col md={4} className="service border-side">
-            <AnimationContainer delay={1000} animation="fadeInUp fast">
-              <div className="icon">
-                <FontAwesomeIcon icon={faServer} className="solid" />
+            <AnimationContainer delay={1000} animation="fadeIn fast">
+              <div className="icon" >
+                <img src={cSharpIcon} width="50px"/> 
               </div>
-              <h4>Linux Server Management</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-                dui sem, vulputate vitae dolor sed, sollicitudin pharetra nisi.
-                In et sem libero. Integer pretium, tellus eu pellentesque
-                tristique, ex libero maximus elit, mollis tristique urna eros
-                non tellus
-              </p>
+              <h4>Davinci Resolve</h4>
             </AnimationContainer>
           </Col>
           <Col md={4} className="service">
             <AnimationContainer delay={1200} animation="fadeInRight fast">
-              <div className="icon">
-                <FontAwesomeIcon icon={faRobot} className="solid" />
+              <div className="icon" >
+                <img src={jestIcon} width="50px"/> 
               </div>
-              <h4>Artifical Intelligence</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-                dui sem, vulputate vitae dolor sed, sollicitudin pharetra nisi.
-                In et sem libero. Integer pretium, tellus eu pellentesque
-                tristique, ex libero maximus elit, mollis tristique urna eros
-                non tellus
-              </p>
+              <h4>Blender</h4>
             </AnimationContainer>
           </Col>
-        </Row>
+          </Row>
+        </>
       )
     }
   }
 
-  counters() {
+  clients() {
     if (this.state.show || this.context.height === 'auto') {
       return (
-        <Container>
-          <Col md={3}>
-            <AnimationContainer delay={100} animation="fadeIn fast">
-              <Counter
-                icon={faSmileBeam}
-                value={100}
-                text="Happy Clients"
-                symbol="+"
-                duration={3}
-              />
+        <>
+          <Col md={2} className="client">
+            <AnimationContainer delay={100} animation="fadeIn slower">
+              <img src={ SD } alt="client" />
             </AnimationContainer>
           </Col>
-          <Col md={3}>
-            <AnimationContainer delay={100} animation="fadeIn fast">
-              <Counter
-                icon={faPizzaSlice}
-                value={1000}
-                text="Pizzas Ordered"
-                symbol="+"
-                duration={3}
-              />
+          <Col md={2} className="client">
+            <AnimationContainer delay={100} animation="fadeIn slower">
+              <img src={ GD } alt="client" />
             </AnimationContainer>
           </Col>
-          <Col md={3}>
-            <AnimationContainer delay={100} animation="fadeIn fast">
-              <Counter
-                icon={faQuoteRight}
-                value={500}
-                text="Reviews"
-                symbol="+"
-                duration={3}
-              />
+          <Col md={2} className="client">
+            <AnimationContainer delay={100} animation="fadeIn slower">
+              <img src={ CB } alt="client" />
             </AnimationContainer>
           </Col>
-          <Col md={3}>
-            <AnimationContainer delay={100} animation="fadeIn fast">
-              <Counter
-                icon={faCode}
-                value={50000}
-                text="Lines of Code"
-                symbol="+"
-                duration={3}
-              />
+          <Col md={2} className="client">
+            <AnimationContainer delay={100} animation="fadeIn slower">
+              <img src={ WR } alt="client" />
             </AnimationContainer>
           </Col>
-        </Container>
+          <Col md={2} className="client">
+            <AnimationContainer delay={100} animation="fadeIn slower">
+              <img src={ UI } alt="client" />
+            </AnimationContainer>
+          </Col>
+          <Col md={2} className="client">
+            <AnimationContainer delay={100} animation="fadeIn slower">
+              <img src={ AV } alt="client" />
+            </AnimationContainer>
+          </Col>
+        </>
       )
     }
   }
 }
+
 
 export default SecondServices

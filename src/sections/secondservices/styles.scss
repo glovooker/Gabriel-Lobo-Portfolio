@@ -2,9 +2,10 @@
 
 .secondservices {
      background-color: transparent;
+
      .row.top {
           display: flex;
-          min-height: 100%;
+          min-height: 80%;
           display: block;
           overflow: hidden;
 
@@ -95,6 +96,44 @@
                               }
                          }
                     }
+               }
+          }
+     }
+
+     .row.bottom {
+          display: flex;
+          min-height: 20%;
+          background-color: #11123F;
+
+          @media (max-width : 991px) {
+               display: block;
+          }
+
+          .client {
+               display: flex;
+               justify-content: center;
+
+               @media (max-width : 991px) {
+                    margin: 50px 0;
+               }
+
+               img {
+                    object-fit: contain;
+                    margin-bottom: 0;
+                    max-width: 100px;
+                    max-height: 100px;
+                    opacity: .5;
+                    transition: .5s;
+
+                    &:hover {
+                         opacity: 1;
+                    }
+               }
+
+               div {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                }
           }
      }

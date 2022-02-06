@@ -3,8 +3,17 @@ import { Row, Col, Container } from 'react-bootstrap'
 import BaffleText from 'components/baffle-text'
 import AnimationContainer from 'components/animation-container'
 import netIcon from '../../../content/images/icons/net.svg'
+import cSharpIcon from '../../../content/images/icons/c#.svg'
+import jestIcon from '../../../content/images/icons/jest.svg'
+import scrumIcon from '../../../content/images/icons/scrum.svg'
+import vsIcon from '../../../content/images/icons/vs.svg'
+import vsCodeIcon from '../../../content/images/icons/vscode.svg'
+import waterfallIcon from '../../../content/images/icons/waterfall.svg'
+import sqlServerIcon from '../../../content/images/icons/sqlserver.svg'
+import firebaseIcon from '../../../content/images/icons/firebase.svg'
+import mongoDbIcon from '../../../content/images/icons/mongodb.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faReact, faAngular, faNodeJs, faJsSquare } from '@fortawesome/free-brands-svg-icons'
+import { faReact, faNodeJs, faJsSquare, faFigma, faGitAlt, faGithub } from '@fortawesome/free-brands-svg-icons'
 import {
   faPencilRuler,
   faServer,
@@ -50,9 +59,6 @@ class Services extends React.Component {
         >
           <div className="content">
             <Col md={12}>
-              <div className="line-text">
-                <h4>S K I L L S</h4>
-              </div>
               <div className="heading">
                 <BaffleText
                   text="Some of My Knowledge"
@@ -83,31 +89,26 @@ class Services extends React.Component {
   services() {
     if (this.state.show || this.context.height === 'auto') {
       return (
+        <>
         <Row>
+          <div className="line-text">
+                <h4>C O D I N G</h4>
+              </div>
           <Col md={4} className="service">
             <AnimationContainer delay={200} animation="fadeInLeft fast">
               <div className="icon" id="icon-js">
                 <FontAwesomeIcon icon={faJsSquare} />
               </div>
               <h4>JavaScript</h4>
-              <p>
-                I started studying JavaScript about five years ago, and since then 
-                I've improved my knowledge to create landing pages, WebApps, authentication
-                systems, and many more!
-              </p>
+
             </AnimationContainer>
           </Col>
           <Col md={4} className="service border-side">
-            <AnimationContainer delay={400} animation="fadeInDown fast">
+            <AnimationContainer delay={400} animation="fadeIn fast">
               <div className="icon" >
                 <img src={netIcon} width="50px"/> 
               </div>
-              <h4> Microsoft .NET Core</h4>
-              <p>
-                Having worked with ASP.NET Core to create a whole back-end environment
-                using Razor and Entity Framework, this technology has helped me along my way
-                to develop well-structured server-side projects.
-              </p>
+              <h4> ASP.NET Core</h4>
             </AnimationContainer>
           </Col>
           <Col md={4} className="service">
@@ -116,100 +117,120 @@ class Services extends React.Component {
                 <FontAwesomeIcon icon={faNodeJs} />
               </div>
               <h4>Node.js</h4>
-              <p>
-                When I thought back-end couldn't get any exciter,
-                I came across Google's great runtime environment, Node.js! 
-                I could now use JavaScript outside a browser to build 
-                server-side code right away.
-              </p>
             </AnimationContainer>
           </Col>
+          </Row>
+          <Row>
           <Col md={4} className="service">
             <AnimationContainer delay={800} animation="fadeInLeft fast">
               <div className="icon">
                 <FontAwesomeIcon icon={faReact} className="solid" />
               </div>
               <h4>React.js</h4>
-              <p>
-                My favorite face of JavaScript, React.js is all about UI made simple 
-                and great performace. After working with it in a professional environment,
-                it was love at first sight. And, as you could guess, yes, this portfolio is
-                also running on React. What a coincidence!
-              </p>
             </AnimationContainer>
           </Col>
           <Col md={4} className="service border-side">
-            <AnimationContainer delay={1000} animation="fadeInUp fast">
-              <div className="icon">
-                <FontAwesomeIcon icon={faServer} className="solid" />
+            <AnimationContainer delay={1000} animation="fadeIn fast">
+              <div className="icon" >
+                <img src={cSharpIcon} width="50px"/> 
               </div>
-              <h4>Linux Server Management</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-                dui sem, vulputate vitae dolor sed, sollicitudin pharetra nisi.
-                In et sem libero. Integer pretium, tellus eu pellentesque
-                tristique, ex libero maximus elit, mollis tristique urna eros
-                non tellus
-              </p>
+              <h4>C#</h4>
             </AnimationContainer>
           </Col>
           <Col md={4} className="service">
             <AnimationContainer delay={1200} animation="fadeInRight fast">
-              <div className="icon">
-                <FontAwesomeIcon icon={faRobot} className="solid" />
+              <div className="icon" >
+                <img src={jestIcon} width="50px"/> 
               </div>
-              <h4>Artifical Intelligence</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-                dui sem, vulputate vitae dolor sed, sollicitudin pharetra nisi.
-                In et sem libero. Integer pretium, tellus eu pellentesque
-                tristique, ex libero maximus elit, mollis tristique urna eros
-                non tellus
-              </p>
+              <h4>Jest</h4>
             </AnimationContainer>
           </Col>
-          <Col md={4} className="service">
-            <AnimationContainer delay={200} animation="fadeInLeft fast">
-              <div className="icon" id="icon-js">
-                <FontAwesomeIcon icon={faJsSquare} />
+          </Row>
+          <Row>
+            <div className="line-text">
+                <h4>D A T A B A S E S</h4>
               </div>
-              <h4>JavaScript</h4>
-              <p>
-                I started studying JavaScript about five years ago, and since then 
-                I've improved my knowledge to create landing pages, WebApps, authentication
-                systems, and many more!
-              </p>
+          <Col md={4} className="service">
+            <AnimationContainer delay={1400} animation="fadeInLeft fast">
+              <div className="icon" >
+                <img src={sqlServerIcon} width="50px"/> 
+              </div>
+              <h4>Microsoft SQL Server </h4>
             </AnimationContainer>
           </Col>
           <Col md={4} className="service border-side">
-            <AnimationContainer delay={400} animation="fadeInDown fast">
+            <AnimationContainer delay={1600} animation="fadeIn fast">
               <div className="icon" >
-                <img src={netIcon} width="50px"/> 
+                <img src={firebaseIcon} width="37px"/> 
               </div>
-              <h4> Microsoft .NET Core</h4>
-              <p>
-                Having worked with ASP.NET Core to create a whole back-end environment
-                using Razor and Entity Framework, this technology has helped me along my way
-                to develop well-structured server-side projects.
-              </p>
+              <h4>Google Firebase</h4>
             </AnimationContainer>
           </Col>
           <Col md={4} className="service">
-            <AnimationContainer delay={600} animation="fadeInRight fast">
-              <div className="icon">
-                <FontAwesomeIcon icon={faNodeJs} />
+            <AnimationContainer delay={1800} animation="fadeInRight fast">
+              <div className="icon" >
+                <img src={mongoDbIcon} width="50px"/> 
               </div>
-              <h4>AWS Management</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-                dui sem, vulputate vitae dolor sed, sollicitudin pharetra nisi.
-                In et sem libero. Integer pretium, tellus eu pellentesque
-                tristique, ex libero maximus elit, mollis tristique urna eros
-                non tellus
-              </p>
+              <h4>MongoDB</h4>
             </AnimationContainer>
           </Col>
         </Row>
+          <Row>
+            <div className="line-text">
+                <h4>P R O J E C T &nbsp; M A N A G E M E N T &nbsp; A N D &nbsp; T O O L S</h4>
+              </div>
+          <Col md={4} className="service">
+            <AnimationContainer delay={1400} animation="fadeInLeft fast">
+              <div className="icon" >
+                <img src={scrumIcon} width="50px"/> 
+              </div>
+              <h4>Scrum</h4>
+            </AnimationContainer>
+          </Col>
+          <Col md={4} className="service border-side">
+            <AnimationContainer delay={1600} animation="fadeIn fast">
+              <div className="icon" >
+                <img src={vsCodeIcon} width="50px"/> 
+              </div>
+              <h4>Visual Studio Code</h4>
+            </AnimationContainer>
+          </Col>
+          <Col md={4} className="service">
+            <AnimationContainer delay={1800} animation="fadeInRight fast">
+              <div className="icon">
+                <FontAwesomeIcon icon={faGitAlt} />
+              </div>
+              <h4>Git</h4>
+            </AnimationContainer>
+          </Col>
+        </Row>
+        <Row>
+          <Col md={4} className="service">
+            <AnimationContainer delay={1400} animation="fadeInLeft fast">
+              <div className="icon" >
+                <img src={waterfallIcon} width="50px"/> 
+              </div>
+              <h4>Waterfall</h4>
+            </AnimationContainer>
+          </Col>
+          <Col md={4} className="service border-side">
+            <AnimationContainer delay={1600} animation="fadeIn fast">
+              <div className="icon" >
+                <img src={vsIcon} width="50px"/> 
+              </div>
+              <h4>Visual Studio 2019</h4>
+            </AnimationContainer>
+          </Col>
+          <Col md={4} className="service">
+            <AnimationContainer delay={1800} animation="fadeInRight fast">
+              <div className="icon">
+                <FontAwesomeIcon icon={faGithub} />
+              </div>
+              <h4>Github</h4>
+            </AnimationContainer>
+          </Col>
+        </Row>
+        </>
       )
     }
   }
