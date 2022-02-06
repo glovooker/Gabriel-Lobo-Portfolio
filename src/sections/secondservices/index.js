@@ -15,6 +15,11 @@ import jestIcon from '../../../content/images/icons/jest.svg'
 import materialUiIcon from '../../../content/images/icons/materialui.svg'
 import solanaIcon from '../../../content/images/icons/solana.svg'
 import illustratorIcon from '../../../content/images/icons/illustrator.svg'
+import photoshopIcon from '../../../content/images/icons/photoshop.svg'
+import aftereffectsIcon from '../../../content/images/icons/aftereffects.svg'
+import premiereIcon from '../../../content/images/icons/premiere.svg'
+import davinciIcon from '../../../content/images/icons/davinci.svg'
+import blenderIcon from '../../../content/images/icons/blender.svg'
 
 import { faReact, faNodeJs, faJsSquare, faFigma, faGitAlt, faGithub, faBootstrap, faBitcoin, faEthereum } from '@fortawesome/free-brands-svg-icons'
 import {
@@ -170,15 +175,15 @@ class SecondServices extends React.Component {
           <Col md={4} className="service border-side">
             <AnimationContainer delay={400} animation="fadeIn fast">
               <div className="icon" >
-                <img src={netIcon} width="50px"/> 
+                <img src={photoshopIcon} width="50px"/> 
               </div>
               <h4>Adobe Photoshop</h4>
             </AnimationContainer>
           </Col>
           <Col md={4} className="service">
             <AnimationContainer delay={600} animation="fadeInRight fast">
-              <div className="icon">
-                <FontAwesomeIcon icon={faNodeJs} />
+              <div className="icon" >
+                <img src={aftereffectsIcon} width="50px"/> 
               </div>
               <h4>Adobe After Effects</h4>
             </AnimationContainer>
@@ -187,16 +192,16 @@ class SecondServices extends React.Component {
           <Row>
           <Col md={4} className="service">
             <AnimationContainer delay={800} animation="fadeInLeft fast">
-              <div className="icon">
-                <FontAwesomeIcon icon={faReact} className="solid" />
+              <div className="icon" >
+                <img src={premiereIcon} width="50px"/> 
               </div>
-              <h4>Adobe Premiere</h4>
+              <h4>Adobe Premiere Pro</h4>
             </AnimationContainer>
           </Col>
           <Col md={4} className="service border-side">
             <AnimationContainer delay={1000} animation="fadeIn fast">
               <div className="icon" >
-                <img src={cSharpIcon} width="50px"/> 
+                <img src={davinciIcon} width="50px"/> 
               </div>
               <h4>Davinci Resolve</h4>
             </AnimationContainer>
@@ -204,7 +209,7 @@ class SecondServices extends React.Component {
           <Col md={4} className="service">
             <AnimationContainer delay={1200} animation="fadeInRight fast">
               <div className="icon" >
-                <img src={jestIcon} width="50px"/> 
+                <img src={blenderIcon} width="50px"/> 
               </div>
               <h4>Blender</h4>
             </AnimationContainer>
