@@ -38,7 +38,7 @@ class Portfolio extends React.Component {
       <section
         id={`${this.props.id}`}
         className="portfolio"
-        style={{ height: this.context.height }}
+        style={{ height: (this.context.height) }}
       >
         <Row>
           <Col md={2} className="side">
@@ -196,7 +196,7 @@ export default props => (
           query {
             items: allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/(portfolio)/"}}, sort: {fields: [frontmatter___id], order: ASC}, 
             # The layout is built for 6 portfolio items #
-            limit: 6) {
+            limit: 12) {
               edges {
                 content: node {
                   html

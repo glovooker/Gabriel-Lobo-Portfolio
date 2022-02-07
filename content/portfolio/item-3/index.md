@@ -1,6 +1,6 @@
 ---
 id: 3
-image: './image.jpg'
-title: "Angular Project"
-category: "Angular.js"
+image: "./image.jpg"
+title: "Grey's Also a Color"
+category: "Writing"
 ---

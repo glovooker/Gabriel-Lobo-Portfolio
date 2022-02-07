@@ -21,7 +21,6 @@ class Layout extends React.Component {
       'services',
       'secondservices',
       'portfolio',
-      'contact',
     ]
     this.section_id = 0
     this.scrolling = false

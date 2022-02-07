@@ -1,6 +1,6 @@
 ---
 id: 2
-image: './image.jpg'
-title: "Front-end Project"
-category: "React.js"
+image: "./image.jpg"
+title: "Tummy"
+category: "Software Development"
 ---

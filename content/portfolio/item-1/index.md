@@ -1,6 +1,6 @@
 ---
 id: 1
-image: './image.jpg'
-title: "Front-end Development"
-category: "React.js"
+image: "./image.jpg"
+title: "Staries Books"
+category: "Software Development"
 ---

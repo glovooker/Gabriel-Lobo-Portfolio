@@ -26,8 +26,8 @@ class HomePage extends React.Component {
             <div className='backgroundServices'>
               <Services id="services" />
               <SecondServices id="secondservices" />
+              <Portfolio id="portfolio" />
             </div>
-            <Portfolio id="portfolio" />
             <Contact id="contact" />
         </Layout>
         <Spinner duration={2000} />
