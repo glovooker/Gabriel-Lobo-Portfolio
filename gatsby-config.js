@@ -4,7 +4,7 @@ module.exports = {
     description:
       'Welcome to my portfolio.',
   },
-  pathPrefix: '/',
+  pathPrefix: '/Gabriel-Lobo-Portfolio',
   plugins: [
     {
       resolve: 'gatsby-source-filesystem',
