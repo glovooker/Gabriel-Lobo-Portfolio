@@ -1,5 +1,5 @@
 {
-  "name": "Gabriel Lobo's Portfolio",
+  "name": "gabriel-lobo-portfolio",
   "description": "A portfolio with all my works and projects from art, dev, and many more.",
   "version": "1.0.0",
   "author": "Gabriel Lobo",
@@ -67,6 +67,6 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public -b main"
   }
 }
