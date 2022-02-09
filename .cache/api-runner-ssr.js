@@ -1,11 +1,11 @@
 var plugins = [{
-      plugin: require('D:/Gabriel/Gabriel/OneDrive - CEDES Don Bosco/Personal/Portafolio y CV/Portfolio/retro/node_modules/gatsby-plugin-google-fonts/gatsby-ssr'),
+      plugin: require('D:/Gabriel/Gabriel/OneDrive - CEDES Don Bosco/Personal/Portafolio y CV/Portfolio/Gabriel Lobos Portfolio/node_modules/gatsby-plugin-google-fonts/gatsby-ssr'),
       options: {"plugins":[],"fonts":["Poppins:300,400,400,700,800,900"],"display":"swap"},
     },{
-      plugin: require('D:/Gabriel/Gabriel/OneDrive - CEDES Don Bosco/Personal/Portafolio y CV/Portfolio/retro/node_modules/gatsby-plugin-offline/gatsby-ssr'),
+      plugin: require('D:/Gabriel/Gabriel/OneDrive - CEDES Don Bosco/Personal/Portafolio y CV/Portfolio/Gabriel Lobos Portfolio/node_modules/gatsby-plugin-offline/gatsby-ssr'),
       options: {"plugins":[]},
     },{
-      plugin: require('D:/Gabriel/Gabriel/OneDrive - CEDES Don Bosco/Personal/Portafolio y CV/Portfolio/retro/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
+      plugin: require('D:/Gabriel/Gabriel/OneDrive - CEDES Don Bosco/Personal/Portafolio y CV/Portfolio/Gabriel Lobos Portfolio/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
       options: {"plugins":[]},
     }]
 // During bootstrap, we write requires at top of this file which looks like:
