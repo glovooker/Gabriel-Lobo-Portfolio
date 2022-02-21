@@ -122,7 +122,7 @@ class Services extends React.Component {
           </Row>
           <Row>
           <Col md={4} className="service">
-            <AnimationContainer delay={800} animation="fadeInLeft fast">
+            <AnimationContainer delay={200} animation="fadeInLeft fast">
               <div className="icon">
                 <FontAwesomeIcon icon={faReact} className="solid" />
               </div>
@@ -130,7 +130,7 @@ class Services extends React.Component {
             </AnimationContainer>
           </Col>
           <Col md={4} className="service border-side">
-            <AnimationContainer delay={1000} animation="fadeIn fast">
+            <AnimationContainer delay={400} animation="fadeIn fast">
               <div className="icon" >
                 <img src={cSharpIcon} width="50px"/> 
               </div>
@@ -138,7 +138,7 @@ class Services extends React.Component {
             </AnimationContainer>
           </Col>
           <Col md={4} className="service">
-            <AnimationContainer delay={1200} animation="fadeInRight fast">
+            <AnimationContainer delay={600} animation="fadeInRight fast">
               <div className="icon" >
                 <img src={jestIcon} width="50px"/> 
               </div>
@@ -151,7 +151,7 @@ class Services extends React.Component {
                 <h4>D A T A B A S E S</h4>
               </div>
           <Col md={4} className="service">
-            <AnimationContainer delay={1400} animation="fadeInLeft fast">
+            <AnimationContainer delay={800} animation="fadeInLeft fast">
               <div className="icon" >
                 <img src={sqlServerIcon} width="50px"/> 
               </div>
@@ -159,7 +159,7 @@ class Services extends React.Component {
             </AnimationContainer>
           </Col>
           <Col md={4} className="service border-side">
-            <AnimationContainer delay={1600} animation="fadeIn fast">
+            <AnimationContainer delay={1000} animation="fadeIn fast">
               <div className="icon" >
                 <img src={firebaseIcon} width="37px"/> 
               </div>
@@ -167,7 +167,7 @@ class Services extends React.Component {
             </AnimationContainer>
           </Col>
           <Col md={4} className="service">
-            <AnimationContainer delay={1800} animation="fadeInRight fast">
+            <AnimationContainer delay={1200} animation="fadeInRight fast">
               <div className="icon" >
                 <img src={mongoDbIcon} width="50px"/> 
               </div>
