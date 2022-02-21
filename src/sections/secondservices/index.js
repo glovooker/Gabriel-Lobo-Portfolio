@@ -161,7 +161,7 @@ class SecondServices extends React.Component {
                 <h4>V I S U A L &nbsp; D E S I G N</h4>
               </div>
           <Col md={4} className="service">
-            <AnimationContainer delay={200} animation="fadeInLeft fast">
+            <AnimationContainer delay={1400} animation="fadeInLeft fast">
               <div className="icon" >
                 <img src={illustratorIcon} width="50px"/> 
               </div>
@@ -170,7 +170,7 @@ class SecondServices extends React.Component {
             </AnimationContainer>
           </Col>
           <Col md={4} className="service border-side">
-            <AnimationContainer delay={400} animation="fadeIn fast">
+            <AnimationContainer delay={1600} animation="fadeIn fast">
               <div className="icon" >
                 <img src={photoshopIcon} width="50px"/> 
               </div>
@@ -178,7 +178,7 @@ class SecondServices extends React.Component {
             </AnimationContainer>
           </Col>
           <Col md={4} className="service">
-            <AnimationContainer delay={600} animation="fadeInRight fast">
+            <AnimationContainer delay={1800} animation="fadeInRight fast">
               <div className="icon" >
                 <img src={aftereffectsIcon} width="50px"/> 
               </div>
@@ -188,7 +188,7 @@ class SecondServices extends React.Component {
           </Row>
           <Row>
           <Col md={4} className="service">
-            <AnimationContainer delay={800} animation="fadeInLeft fast">
+            <AnimationContainer delay={1400} animation="fadeInLeft fast">
               <div className="icon" >
                 <img src={premiereIcon} width="50px"/> 
               </div>
@@ -196,7 +196,7 @@ class SecondServices extends React.Component {
             </AnimationContainer>
           </Col>
           <Col md={4} className="service border-side">
-            <AnimationContainer delay={1000} animation="fadeIn fast">
+            <AnimationContainer delay={1600} animation="fadeIn fast">
               <div className="icon" >
                 <img src={davinciIcon} width="50px"/> 
               </div>
@@ -204,7 +204,7 @@ class SecondServices extends React.Component {
             </AnimationContainer>
           </Col>
           <Col md={4} className="service">
-            <AnimationContainer delay={1200} animation="fadeInRight fast">
+            <AnimationContainer delay={1800} animation="fadeInRight fast">
               <div className="icon" >
                 <img src={blenderIcon} width="50px"/> 
               </div>
@@ -222,32 +222,32 @@ class SecondServices extends React.Component {
       return (
         <>
           <Col md={2} className="client">
-            <AnimationContainer delay={100} animation="fadeIn slower">
+            <AnimationContainer delay={2000} animation="fadeIn slower">
               <img src={ SD } alt="client" />
             </AnimationContainer>
           </Col>
           <Col md={2} className="client">
-            <AnimationContainer delay={100} animation="fadeIn slower">
+            <AnimationContainer delay={2100} animation="fadeIn slower">
               <img src={ GD } alt="client" />
             </AnimationContainer>
           </Col>
           <Col md={2} className="client">
-            <AnimationContainer delay={100} animation="fadeIn slower">
+            <AnimationContainer delay={2200} animation="fadeIn slower">
               <img src={ CB } alt="client" />
             </AnimationContainer>
           </Col>
           <Col md={2} className="client">
-            <AnimationContainer delay={100} animation="fadeIn slower">
+            <AnimationContainer delay={2300} animation="fadeIn slower">
               <img src={ WR } alt="client" />
             </AnimationContainer>
           </Col>
           <Col md={2} className="client">
-            <AnimationContainer delay={100} animation="fadeIn slower">
+            <AnimationContainer delay={2400} animation="fadeIn slower">
               <img src={ UI } alt="client" />
             </AnimationContainer>
           </Col>
           <Col md={2} className="client">
-            <AnimationContainer delay={100} animation="fadeIn slower">
+            <AnimationContainer delay={2500} animation="fadeIn slower">
               <img src={ AV } alt="client" />
             </AnimationContainer>
           </Col>

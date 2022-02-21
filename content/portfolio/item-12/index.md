@@ -1,6 +1,6 @@
 ---
 id: 12
 image: "./image.jpg"
-title: "UX Development for Company"
-category: "UI/UX Design"
+title: "FDT Tournament App"
+category: "Software Development"
 ---
