@@ -17,6 +17,7 @@ import aftereffectsIcon from '../../../content/images/icons/aftereffects.svg'
 import premiereIcon from '../../../content/images/icons/premiere.svg'
 import davinciIcon from '../../../content/images/icons/davinci.svg'
 import blenderIcon from '../../../content/images/icons/blender.svg'
+import ReactTooltip from "react-tooltip"
 
 import { faReact, faNodeJs, faJsSquare, faFigma, faGitAlt, faGithub, faBootstrap, faBitcoin, faEthereum } from '@fortawesome/free-brands-svg-icons'
 import {
@@ -223,32 +224,50 @@ class SecondServices extends React.Component {
         <>
           <Col md={2} className="client">
             <AnimationContainer delay={2000} animation="fadeIn slower">
-              <img src={ SD } alt="client" />
+              <img src={ SD } alt="client" data-tip data-for="sdTip" />
+              <ReactTooltip id="sdTip" place="top" type="light" effect="solid">
+                Software Development
+              </ReactTooltip>
             </AnimationContainer>
           </Col>
           <Col md={2} className="client">
             <AnimationContainer delay={2100} animation="fadeIn slower">
-              <img src={ GD } alt="client" />
+              <img src={ GD } alt="client" data-tip data-for="gdTip" />
+              <ReactTooltip id="gdTip" place="top" type="light" effect="solid">
+                Graphic Design
+              </ReactTooltip>
             </AnimationContainer>
           </Col>
           <Col md={2} className="client">
             <AnimationContainer delay={2200} animation="fadeIn slower">
-              <img src={ CB } alt="client" />
+              <img src={ CB } alt="client" data-tip data-for="cbTip" />
+              <ReactTooltip id="cbTip" place="top" type="light" effect="solid">
+                Crypto & Blockchain
+              </ReactTooltip>
             </AnimationContainer>
           </Col>
           <Col md={2} className="client">
             <AnimationContainer delay={2300} animation="fadeIn slower">
-              <img src={ WR } alt="client" />
+              <img src={ WR } alt="client" data-tip data-for="wrTip" />
+              <ReactTooltip id="wrTip" place="top" type="light" effect="solid">
+                Writing
+              </ReactTooltip>
             </AnimationContainer>
           </Col>
           <Col md={2} className="client">
             <AnimationContainer delay={2400} animation="fadeIn slower">
-              <img src={ UI } alt="client" />
+              <img src={ UI } alt="client" data-tip data-for="uiTip" />
+              <ReactTooltip id="uiTip" place="top" type="light" effect="solid">
+                UI/UX
+              </ReactTooltip>
             </AnimationContainer>
           </Col>
           <Col md={2} className="client">
             <AnimationContainer delay={2500} animation="fadeIn slower">
-              <img src={ AV } alt="client" />
+              <img src={ AV } alt="client" data-tip data-for="avTip" />
+              <ReactTooltip id="avTip" place="top" type="light" effect="solid">
+                Audiovisual Production
+              </ReactTooltip>
             </AnimationContainer>
           </Col>
         </>

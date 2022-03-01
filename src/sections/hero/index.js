@@ -5,11 +5,21 @@ import { Row, Col } from 'react-bootstrap'
 import Glitch from 'components/glitch'
 import Typewriter from 'typewriter-effect'
 import ThemeContext from '../../context'
+import { saveAs } from "file-saver"
+import Resume from '../../../content/Resume.pdf'
 class Hero extends React.Component {
 
   static contextType = ThemeContext
 
   render() {
+
+    const saveFile = () => {
+      saveAs(
+        Resume,
+        "Just My Resume.pdf"
+      );
+    };
+
     return (
       <section
         id={`${this.props.id}`}
@@ -20,7 +30,7 @@ class Hero extends React.Component {
           <Col md={12} className="content">
             <div className="content-text">
               <div className="line-text">
-                <h4>Hello, I'm</h4>
+                <h4>Hello World, I'm</h4>
               </div>
               <Glitch text="Gabriel Lobo" />
               <Typewriter
@@ -37,7 +47,7 @@ class Hero extends React.Component {
                   loop: true,
                 }}
               />
-              <button className="hover-button">
+              <button className="hover-button" onClick={saveFile}>
                   <span>Download Resume</span>
               </button>
             </div>

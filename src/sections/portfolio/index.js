@@ -53,18 +53,6 @@ class Portfolio extends React.Component {
             </h2>
           </Col>
           <Col md={10} className="recent-works">
-            <div className="portfolio_selector">
-              <button
-                className="portfolio_category"
-                onClick={() => this.changeCategory(null)}
-              >
-                <span className={`${!this.state.category ? 'active' : ''}`}>
-                  All
-                </span>
-              </button>
-              {this.categories()}
-            </div>
-
             <div className="content">
               <div
                 className="portfolio_container"
@@ -143,51 +131,6 @@ class Portfolio extends React.Component {
       })
     }
   }
-
-  getItemCount(category) {
-    let total = 0
-    this.state.items.forEach(v => {
-      if (v.content.frontmatter.category === category || !category) total++
-    })
-    return total
-  }
-
-  changeCategory(category) {
-    const { items } = this.props
-    this.setState({ items: [] })
-    let total = 0
-    items.forEach(v => {
-      if (v.content.frontmatter.category === category || !category) total++
-    })
-    let col = total > 6 ? 4 : total > 4 ? 3 : total > 3 ? 2 : total > 1 ? 2 : 1
-
-    this.setState({ category: category, col: col })
-    setTimeout(() => {
-      this.setState({ items: items })
-    }, 50)
-  }
-
-  categories() {
-    const { items } = this.props
-    let categories = []
-    for (var v of items) {
-      categories.push(v.content.frontmatter.category)
-    }
-    categories = [...new Set(categories)]
-    return categories.map((value, index) => {
-      return (
-        <button
-          className="portfolio_category"
-          onClick={() => this.changeCategory(value)}
-          key={index}
-        > 
-          <span className={`${this.state.category === value ? 'active' : ''}`}>
-            {value}
-          </span>
-        </button>
-      )
-    })
-  }
 }
 
 export default props => (
@@ -196,7 +139,7 @@ export default props => (
           query {
             items: allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/(portfolio)/"}}, sort: {fields: [frontmatter___id], order: ASC}, 
             # The layout is built for 6 portfolio items #
-            limit: 12) {
+            limit: 13) {
               edges {
                 content: node {
                   html

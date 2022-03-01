@@ -12,19 +12,16 @@ class Navigation extends React.Component {
         }
         this.sections = [
             {
-                name: "Home"
+                name: "Hello World"
             },
             {
-                name: "About"
+                name: "Who am I?"
             },
             {
-                name: "Services"
+                name: "What do I know?"
             },
             {
-                name: "Portfolio"
-            },
-            {
-                name: "Contact"
+                name: "What do I do?"
             }
         ]
     }
