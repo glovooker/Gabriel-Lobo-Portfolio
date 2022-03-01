@@ -12,16 +12,20 @@ class Navigation extends React.Component {
         }
         this.sections = [
             {
-                name: "Hello World"
+                name: "Home",
+                title: "Hello World"
             },
             {
-                name: "Who am I?"
+                name: "About",
+                title: "Who am I?"
             },
             {
-                name: "What do I know?"
+                name: "Services",
+                title: "What do I know?"
             },
             {
-                name: "What do I do?"
+                name: "Portfolio",
+                title: "What do I do?"
             }
         ]
     }
@@ -65,7 +69,7 @@ class Navigation extends React.Component {
         return this.sections.map((value, index) => {
             return (
                 <li key={index}>
-                    <button onClick={() => this.navScroll(value.name.toLowerCase(), index)}>{value.name}</button>
+                    <button onClick={() => this.navScroll(value.name.toLowerCase(), index)}>{value.title}</button>
                 </li>
             )
         })
