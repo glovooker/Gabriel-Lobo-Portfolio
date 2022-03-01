@@ -8,7 +8,6 @@ import About from 'sections/about'
 import Portfolio from 'sections/portfolio'
 import Services from 'sections/services'
 import SecondServices from 'sections/secondservices'
-import Contact from 'sections/contact'
 
 class HomePage extends React.Component {
 
@@ -21,14 +20,13 @@ class HomePage extends React.Component {
           <meta name="description" content={site.meta.description} />
         </Helmet>
         <Layout>
-            <Hero id="home" />
-            <About id="about" />
-            <div className='backgroundServices'>
-              <Services id="services" />
-              <SecondServices id="secondservices" />
-              <Portfolio id="portfolio" />
-            </div>
-            <Contact id="contact" />
+          <Hero id="home" />
+          <About id="about" />
+          <div className='backgroundServices'>
+            <Services id="services" />
+            <SecondServices id="secondservices" />
+            <Portfolio id="portfolio" />
+          </div>
         </Layout>
         <Spinner duration={2000} />
       </div>
