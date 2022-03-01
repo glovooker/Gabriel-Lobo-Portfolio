@@ -20,7 +20,7 @@ class Layout extends React.Component {
       'about',
       'services',
       'secondservices',
-      'portfolio',
+      'portfolio'
     ]
     this.section_id = 0
     this.scrolling = false
