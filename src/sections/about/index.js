@@ -19,7 +19,7 @@ class Hero extends React.Component {
                     <Col md={6} className="content">
                         <div className="content-text">
                             <div className="line-text">
-                                <h4>A B O U T &nbsp; M E</h4>
+                                <h4>W H O &nbsp; A M &nbsp; I ?</h4>
                             </div>
                             <h3>I'm a React Developer with a Graphic Designer Complex</h3>
                             <div className="separator" />

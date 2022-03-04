@@ -24,9 +24,14 @@ class Hero extends React.Component {
       <section
         id={`${this.props.id}`}
         className="hero"
-        style={{ height: this.context.height }}
       >
         <Row>
+          <Col md={12} className="img-mobile">
+            <img
+              src={this.props.mainImg.childImageSharp.fluid.src}
+              alt="Gabriel Lobo' Logo"
+            />
+          </Col>
           <Col md={12} className="content">
             <div className="content-text">
               <div className="line-text">

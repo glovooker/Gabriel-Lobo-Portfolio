@@ -3,7 +3,7 @@
 .hero {
     background-image: url(../../../content/images/person.jpg);
     background-color: #000;
-    height: 500px;
+    height: 100vh;
     padding: 50px;
     display: flex;
     align-items: center;
@@ -11,6 +11,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        height: 100vh;
     }
     .row {
         display: flex;
@@ -19,6 +20,7 @@
         max-height: 120%;
         @media (max-width: 991px) {
             flex-wrap: wrap;
+            max-height: 120%;
         }
         .img {
             display: flex;
@@ -26,14 +28,30 @@
             align-items: center;
             padding: 0;
             overflow: hidden;
-            width: 1000px;
+            width: 140vh;
             
-            img {
-                width: 1000px;
-                
-                @media (max-width: 991px) {
-                    width: 500px;
-                }
+            @media (max-width: 991px) {
+                width: 0vh;
+                visibility: hidden;
+            }
+            
+        }
+        .img-mobile {
+            display: flex;
+            justify-self: flex-end;
+            align-items: center;
+            padding: 0;
+            overflow: hidden;
+            width: 0vh;
+            visibility: hidden;
+
+            @media (max-width: 991px) {
+                width: 45vh;
+                visibility: visible;
+                margin-left: 22vw;
+                justify-self: center;
+                align-self: center;
+
             }
 
         }
@@ -51,7 +69,7 @@
             }
             .Typewriter span {
                 color: #fff;
-                font-size: 50px;
+                font-size: 7vh;
                 font-family: 'Circular Std';
                 font-feature-settings: 'ss01', 'ss02';
                 font-weight: 400;
@@ -61,26 +79,27 @@
             }
             @media (max-width:991px) {
                 .glitch {
-                    font-size: 40px;
+                    font-size: 8vh;
                     line-height: 40px;
                     margin-bottom: 20px;
                 }
                 .Typewriter span {
-                    font-size: 20px;
+                    font-size: 5vh;
                 }
             }
             @media (max-width:1024px) {
                 .glitch {
-                    font-size: 40px;
-                    line-height: 40px;
+                    font-size: 10vh;
+                    line-height: 70px;
+                    
                 }
                 .Typewriter span {
-                    font-size: 20px;
+                    font-size: 5vh;
                 }
             }
             @media (min-width:1025px) and (max-width: 1500px) {
                 .glitch {
-                    font-size: 70px;
+                    font-size: 12vh;
                     line-height: 70px;
                 }
             }
